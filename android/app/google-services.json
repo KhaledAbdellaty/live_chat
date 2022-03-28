@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1087176440742",
+    "project_id": "firbase-e652b",
+    "storage_bucket": "firbase-e652b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087176440742:android:7789f270a85928e8a02d67",
+        "android_client_info": {
+          "package_name": "com.example.livechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087176440742-7tq7gigotpf1ab0l7vd36pq4lhdbkjja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH8YV8hcNeHgMI2Q68L6EyUEg_SmP2upQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087176440742-7tq7gigotpf1ab0l7vd36pq4lhdbkjja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
