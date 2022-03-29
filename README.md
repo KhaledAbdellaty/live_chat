@@ -15,7 +15,5 @@ A new Flutter project.
 
 <img src="images/liveshots/u.png" width="350" height="750">
 
-<img src="images/liveshots/c1.png" width="350" height="750">
-
 <img src="images/liveshots/c2.png" width="350" height="750">
 
