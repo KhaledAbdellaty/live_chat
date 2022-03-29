@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:livechat/database/users_api.dart';
 import 'package:livechat/ui/screens/home_screen.dart';
 import 'package:livechat/ui/screens/signin_screen.dart';
-import 'package:livechat/ui/screens/users_screen.dart';
 import 'package:livechat/ui/widgets/custom_widget/button.dart';
 import 'package:livechat/ui/widgets/custom_widget/text_form_field.dart';
 import 'package:provider/provider.dart';
@@ -156,37 +155,6 @@ class RegisterScreen extends StatelessWidget {
                     )
                   ],
                 )),
-                // TextFormField(
-                //   controller: _name,
-                //   onSaved: (value) {
-                //     _name.text = value!;
-                //   },
-                // ),
-                // TextFormField(
-                //   controller: _email,
-                //   onSaved: (value) {
-                //     _email.text = value!;
-                //   },
-                // ),
-                // TextFormField(
-                //   controller: _pass,
-                //   onSaved: (value) {
-                //     _pass.text = value!;
-                //   },
-                // ),
-                // ElevatedButton(
-                //     onPressed: () {
-                //       UsersApi.instance
-                //           .createUser(
-                //               context, _name.text, _email.text, _pass.text)
-                //           .then((_) => UsersApi.instance
-                //               .signInUser(context, _email.text, _pass.text));
-                //       Navigator.push(
-                //           context,
-                //           MaterialPageRoute(
-                //               builder: (context) => UsersScreen()));
-                //     },
-                //     child: Text('add')),
               ],
             ),
           ),

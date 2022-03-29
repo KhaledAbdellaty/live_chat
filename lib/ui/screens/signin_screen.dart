@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:livechat/database/users_api.dart';
 import 'package:livechat/ui/screens/home_screen.dart';
+import 'package:livechat/ui/screens/register_screen.dart';
 import 'package:livechat/ui/widgets/custom_widget/button.dart';
 import 'package:livechat/ui/widgets/custom_widget/text_form_field.dart';
 import 'package:provider/provider.dart';
@@ -38,24 +40,11 @@ class _SignInScreenState extends State<SignInScreen> {
           child: Padding(
             padding: const EdgeInsets.all(10),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  margin: EdgeInsets.only(
-                      top: size.height / 10, left: size.height / 50),
-                  width: size.width,
-                  height: size.height / 5,
-                  child: Text(
-                    'Welcome',
-                    style: TextStyle(
-                      color: Colors.blue[900],
-                      fontSize: 50,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
                 Padding(
                   padding: const EdgeInsetsDirectional.only(
-                      top: 30, bottom: 50, start: 50, end: 10),
+                      top: 90, bottom: 50, start: 50, end: 10),
                   child: Image.asset('images/logo.png'),
                 ),
                 SizedBox(
@@ -132,9 +121,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           Center(
                             child: InkWell(
                               onTap: () =>
-                                  Navigator.pushNamedAndRemoveUntil(
-                                      context, HomeScreen.screenRoute, (
-                                      route) => false),
+                                  Navigator.pushNamed(context, RegisterScreen.screenRoute),
                               child: const Text(
                                 'Create account..',
                                 style: TextStyle(

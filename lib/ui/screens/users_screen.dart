@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:livechat/database/messages_api.dart';
 import 'package:livechat/database/users_api.dart';
-import 'package:livechat/providers/messages_provider.dart';
 import 'package:livechat/providers/navigation_provider.dart';
 import 'package:livechat/providers/users_provider.dart';
-import 'package:livechat/ui/screens/messages_screen.dart';
 import 'package:livechat/ui/widgets/header_users.dart';
 import 'package:livechat/ui/widgets/user_widget.dart';
 import 'package:provider/provider.dart';
@@ -33,7 +30,6 @@ class _UsersScreenState extends State<UsersScreen> {
       child: Scaffold(
         body: Column(
               children: [
-                appBar(context),
                 const Header(),
                 const SizedBox(
                   height: 20,
@@ -67,34 +63,5 @@ class _UsersScreenState extends State<UsersScreen> {
     );
   }
 
-  Row appBar(context) {
-    return Row(
-        children: [
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-              child: Text(
-                'Live Chat',
-                style: TextStyle(
-                    color: Colors.blue[900],
-                    fontWeight: FontWeight.bold,
-                    fontSize: 34),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: InkWell(
-              onTap: () {
-                UsersApi.instance.signOut(context);
-              },
-              child: Icon(
-                Icons.logout_rounded,
-                color: Colors.blue[900],
-              ),
-            ),
-          )
-        ],
-    );
-  }
+
 }
