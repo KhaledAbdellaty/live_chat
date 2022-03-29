@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: _auth.currentUser != null ? SignInScreen():HomeScreen(),
+        home: _auth.currentUser != null ? HomeScreen():SignInScreen(),
         routes: {
       HomeScreen.screenRoute : (context) => const HomeScreen(),
       SignInScreen.screenRoute : (context) => SignInScreen(),
