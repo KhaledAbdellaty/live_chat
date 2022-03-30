@@ -1,12 +1,9 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:livechat/database/messages_api.dart';
 import 'package:livechat/providers/messages_provider.dart';
 import 'package:livechat/providers/users_provider.dart';
-import 'package:livechat/ui/screens/users_screen.dart';
 import 'package:livechat/ui/widgets/message_widget.dart';
 import 'package:provider/provider.dart';
-
 import '../../methods.dart';
 import '../../providers/navigation_provider.dart';
 
